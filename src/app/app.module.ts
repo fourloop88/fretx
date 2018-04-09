@@ -4,8 +4,7 @@ import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
 
 import { HelloIonicPage } from '../pages/hello-ionic/hello-ionic';
-import { ItemDetailsPage } from '../pages/item-details/item-details';
-import { ListPage } from '../pages/list/list';
+import { PlaylistPage } from '../pages/playlist/playlist';
 
 import { HttpModule } from '@angular/http';
 import { StatusBar } from '@ionic-native/status-bar';
@@ -17,8 +16,7 @@ import { YoutubeVideoPlayer } from '@ionic-native/youtube-video-player';
   declarations: [
     MyApp,
     HelloIonicPage,
-    ItemDetailsPage,
-    ListPage
+    PlaylistPage
   ],
   imports: [
     BrowserModule,
@@ -29,8 +27,7 @@ import { YoutubeVideoPlayer } from '@ionic-native/youtube-video-player';
   entryComponents: [
     MyApp,
     HelloIonicPage,
-    ItemDetailsPage,
-    ListPage
+    PlaylistPage
   ],
   providers: [
     StatusBar,

@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { YtProvider } from './../../providers/yt/yt';
 import { Observable } from 'rxjs/Observable';
+import { PlaylistPage } from '../playlist/playlist';
 import { NavController, AlertController} from 'ionic-angular';
 @Component({
   selector: 'page-hello-ionic',
@@ -20,6 +21,6 @@ export class HelloIonicPage {
     
   }
   openVideo(id){
-  	this.navCtrl.push('PlaylistPage', {id: id});
+  	this.navCtrl.push(PlaylistPage, {id: id});
   }
 }

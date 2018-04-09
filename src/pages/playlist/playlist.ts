@@ -9,7 +9,6 @@ import { YoutubeVideoPlayer } from '@ionic-native/youtube-video-player';
  * Ionic pages and navigation.
  */
 
-@IonicPage()
 @Component({
   selector: 'page-playlist',
   templateUrl: 'playlist.html',
@@ -22,8 +21,9 @@ export class PlaylistPage {
 
   ionViewDidLoad() {
   	this.videoId = this.navParams.get('id');
-  	console.log(this.videoId);
-  	this.youtube.openVideo(this.videoId);
+  	console.log(this.youtube.openVideo(this.videoId));
+    console.log(this.youtube);
+    
   }
 
 }
